@@ -20,7 +20,7 @@
         }
     </style>
 </head>
-<body class="work-sans text-[#111111]">
+<body class="work-sans text-[#111111] relative">
 
     <!-- header section start -->
     <header class="bg-[#F9F6E2] mb-32">
@@ -216,12 +216,51 @@
             </div>
             <!-- side bar item container -->
             <div class="col-span-1">
+                <!-- coupon container -->
+                <div class="bg-white rounded-lg shadow-md mb-6 p-6">
+                    <p class="text-2xl font-medium mb-4">Have coupon?</p>
+                    <div class="text-xl flex w-full">
+                        <input type="text" class="border border-[#11111126] w-full rounded-l-lg outline-none px-4" placeholder="Coupon code">
+                        <button class="px-6 py-4 bg-[#E527B2] text-white font-semibold rounded-r-lg">Apply</button>
+                    </div>
+                </div>
+                <!-- title and price container -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <!-- item title container -->
+                    <div class="text-2xl font-medium leading-loose">
+                        <p>hi</p>
+                        <p>hi</p>
+                        <p>hi</p>
+                    </div>
 
+                    <div class="divider"></div>
+
+                    <!-- item price container -->
+                    <div class="text-2xl font-medium leading-loose">
+                        <p>Total price: <span class="text-[#11111180]">00</span><span class="text-[#11111180]">TK</span></p>
+                        <p>Discount: <span class="text-[#11111180]">00</span><span class="text-[#11111180]">TK</span></p>
+                        <p>Total: <span class="text-[#11111180]">00</span><span class="text-[#11111180]">TK</span></p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <button id="btn-makePurchase" class="py-4 text-white font-semibold text-xl bg-[#E527B2] rounded-lg w-full">Make Purchase</button>
+                </div>
             </div>
         </div>
     </main>
     <!-- main section end -->
-    
+
+    <!-- purchases confirmation popup card -->
+    <div id="purchase-popup" class="min-h-full min-w-full flex justify-center items-center bg-[#11111166] absolute top-0 left-0 hidden">
+        <div class="bg-white p-24 text-center rounded-2xl">
+            <img src="images/congo.png" class="inline mb-10">
+            <h3 class="text-5xl font-bold mb-4">Congratulations</h3>
+            <p class="opacity-50 text-xl mb-10">Your Purchase the product</p>
+            <button class="max-w-max py-4 px-11 text-white font-semibold text-xl bg-[#E527B2] rounded-lg"
+            id="btn-goHome">Go Home</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
